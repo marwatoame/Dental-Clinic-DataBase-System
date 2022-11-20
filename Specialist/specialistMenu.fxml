@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Specialist.SpecialistController">
+   <children>
+      <TableView fx:id="table_specialist" editable="true" layoutY="143.0" prefHeight="683.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="ColID" prefWidth="159.0" text="ID Number" />
+          <TableColumn fx:id="ColName" onEditCommit="#updateSname" onEditStart="#updateSname" prefWidth="241.0" text="Specialist Name" />
+            <TableColumn fx:id="ColPhone" onEditCommit="#updatePhone" onEditStart="#updatePhone" prefWidth="200.0" text="Phone Number" />
+            <TableColumn fx:id="ColSpeciality" onEditCommit="#updateSpeciality" onEditStart="#updateSpeciality" prefWidth="247.0" text="Speciality" />
+            <TableColumn fx:id="ColSalary" onEditCommit="#updateSalary" onEditStart="#updateSalary" prefWidth="153.0" text="Salary Per Appointment" />
+        </columns>
+      </TableView>
+      <TextField fx:id="addSname" alignment="CENTER" layoutX="275.0" layoutY="65.0" prefHeight="30.0" prefWidth="200.0" promptText="Specialist Name" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="addSpeciality" alignment="CENTER" layoutX="508.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" promptText="Speciality" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="addSalary" alignment="CENTER" layoutX="508.0" layoutY="65.0" prefHeight="30.0" prefWidth="200.0" promptText="Salary Per Appointment" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="addID" alignment="CENTER" layoutX="275.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" promptText="ID Number" style="-fx-background-color: powderblue;" />
+      <Button fx:id="btnDelete" layoutX="902.0" layoutY="17.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Delete" />
+      <Button fx:id="btnRefresh" layoutX="806.0" layoutY="80.0" mnemonicParsing="false" onAction="#refresh" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Refresh" />
+      <Button fx:id="btnClear" layoutX="902.0" layoutY="80.0" mnemonicParsing="false" onAction="#DeleteAll" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Clear All" />
+      <Button fx:id="btnAdd" layoutX="806.0" layoutY="17.0" mnemonicParsing="false" onAction="#insertData" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Add" />
+      <ImageView fx:id="imgLogo" fitHeight="140.0" fitWidth="235.0" layoutY="-1.0" pickOnBounds="true" />
+      <TextField fx:id="addPhone" alignment="CENTER" layoutX="375.0" layoutY="105.0" prefHeight="30.0" prefWidth="200.0" promptText="Phone Number" style="-fx-background-color: powderblue;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teeth.teethcontroller">
+   <children>
+      <TableView fx:id="table_teeth" editable="true" layoutX="-2.0" layoutY="143.0" prefHeight="706.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="col_ID" prefWidth="119.0" text="ID" />
+          <TableColumn fx:id="col_Name" minWidth="0.0" prefWidth="211.0" text="Name" />
+            <TableColumn fx:id="col_toothnum" prefWidth="109.0" text="Tooth Number" />
+            <TableColumn fx:id="col_condition" prefWidth="216.0" text="Tooth Condition" />
+            <TableColumn fx:id="col_treatment" prefWidth="242.0" text="Tooth Treatment" />
+            <TableColumn fx:id="col_cost" prefWidth="102.0" text="Estimated Cost" />
+        </columns>
+      </TableView>
+      <Group layoutX="110.0" layoutY="32.0" />
+      <AnchorPane layoutX="22.0" layoutY="19.0" />
+      <Button fx:id="bt_chart" layoutX="690.0" layoutY="44.0" mnemonicParsing="false" onAction="#changescene" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Show Chart" />
+      <Button fx:id="bt_delete" layoutX="899.0" layoutY="19.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Delete" />
+      <Button fx:id="bt_clear" layoutX="899.0" layoutY="80.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Clear" />
+      <Button fx:id="bt_add" layoutX="804.0" layoutY="19.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Add" />
+      <Button fx:id="bt_refresh" layoutX="804.0" layoutY="80.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="80.0" style="-fx-background-color: powderblue;" text="Refresh" />
+      <TextField fx:id="txt_treatment" alignment="CENTER" layoutX="451.0" layoutY="53.0" prefHeight="30.0" prefWidth="200.0" promptText="Treatment" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="txt_cost" alignment="CENTER" layoutX="451.0" layoutY="98.0" prefHeight="30.0" prefWidth="200.0" promptText="Cost" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="txt_toothnum" alignment="CENTER" layoutX="232.0" layoutY="98.0" prefHeight="30.0" prefWidth="200.0" promptText="Tooth Number" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="txt_condition" alignment="CENTER" layoutX="451.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" promptText="Condition" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="txt_ID" alignment="CENTER" layoutX="232.0" layoutY="10.0" prefHeight="30.0" prefWidth="200.0" promptText="ID" style="-fx-background-color: powderblue;" />
+      <TextField fx:id="txt_Name" alignment="CENTER" layoutX="232.0" layoutY="53.0" prefHeight="30.0" prefWidth="200.0" promptText="Name" style="-fx-background-color: powderblue;" />
+      <ImageView fx:id="imgLogo" fitHeight="137.0" fitWidth="200.0" layoutY="5.0" pickOnBounds="true" />
+   </children>
+</AnchorPane>

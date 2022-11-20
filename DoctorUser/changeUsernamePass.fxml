@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="550.0" maxWidth="1300.0" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DoctorUser.changeUsernamePass">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="addPassword" layoutX="480.0" layoutY="467.0" prefHeight="60.0" prefWidth="290.0" style="-fx-background-color: powderblue;" />
+            <TextField fx:id="addUsername" layoutX="480.0" layoutY="346.0" prefHeight="60.0" prefWidth="290.0" style="-fx-background-color: powderblue;" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" layoutY="346.0" prefHeight="60.0" prefWidth="180.0" style="-fx-background-color: powderblue;" text="New username">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="279.0" layoutY="467.0" prefHeight="60.0" prefWidth="180.0" style="-fx-background-color: powderblue;" text="New password">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="textDisplay" alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="573.0" prefHeight="60.0" prefWidth="466.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnChange" layoutX="279.0" layoutY="676.0" mnemonicParsing="false" onAction="#Change" prefHeight="60.0" prefWidth="496.0" style="-fx-background-color: powderblue;" text="Change">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="imgLogo" fitHeight="228.0" fitWidth="364.0" layoutX="318.0" layoutY="46.0" pickOnBounds="true">
+               <image>
+                  <Image url="@logo.png" />
+               </image></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu.MainMenuController">
+   <children>
+      <BorderPane fx:id="borderPane" layoutX="-2.0" maxHeight="800.0" maxWidth="1300.0" prefHeight="800.0" prefWidth="1300.0">
+         <left>
+            <VBox prefHeight="800.0" prefWidth="202.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btnDoctors" mnemonicParsing="false" onAction="#goToDoctors" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Doctors" />
+                  <Button fx:id="btnPatients" mnemonicParsing="false" onAction="#goToPatients" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Patients" />
+                  <Button fx:id="btnDentalLabs" mnemonicParsing="false" onAction="#goToDentalLabs" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Dental Labs" />
+                  <Button fx:id="btnSpecialists" mnemonicParsing="false" onAction="#goToSpecialists" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Specialists" />
+                  <Button fx:id="btnAppointment" mnemonicParsing="false" onAction="#goToAppointment" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Appointments" />
+                  <Button fx:id="btnTeeth" mnemonicParsing="false" onAction="#goToTeeth" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Teeth" />
+                  <Button fx:id="btnPayment" mnemonicParsing="false" onAction="#goToPayment" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Payments" />
+                  <Button fx:id="btnDebt" mnemonicParsing="false" onAction="#goToDebt" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Debt" />
+                  <Button fx:id="btnReport" mnemonicParsing="false" onAction="#goToReport" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Report" />
+                  <Button fx:id="btnChange" mnemonicParsing="false" onAction="#goToChange" prefHeight="56.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Change Username &#10;   and Password" />
+                  <Button fx:id="btnMainMenu" mnemonicParsing="false" onAction="#goToMainMenu" prefHeight="45.0" prefWidth="120.0" style="-fx-background-color: powderblue;" text="Return to Main Menu">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="40.0" top="20.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="800.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imgLogo" fitHeight="356.0" fitWidth="400.0" layoutX="349.0" layoutY="222.0" pickOnBounds="true" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

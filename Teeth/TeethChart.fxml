@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="800.0" prefHeight="422.0" prefWidth="749.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Teeth.TeethchartController">
+   <children>
+      <ImageView fx:id="img_chart" fitHeight="500.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@teeth.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
